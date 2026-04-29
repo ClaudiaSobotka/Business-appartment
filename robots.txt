@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://claudiasobotka.github.io/Business-appartment/sitemap.xml
