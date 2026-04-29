@@ -1,0 +1,1692 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Möbliertes Business-Apartment in Wedel | Wohnen auf Zeit bei Hamburg</title>
+  <meta name="description" content="Möbliertes 1-Zimmer-Business-Apartment in Wedel bei Hamburg. Ideal für Pendler, Firmenmitarbeiter, Projektkräfte und Privatpersonen ab 6 Monaten Mietdauer. Modern, ruhig, arbeitsfähig und elbnah.">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:   #1B3A5C;
+      --teal:   #2D6A7A;
+      --sand:   #C9A96E;
+      --cream:  #F7F3ED;
+      --white:  #FFFFFF;
+      --text:   #2C2C2C;
+      --muted:  #6B7280;
+      --border: #E4DDD3;
+    }
+
+    html { scroll-behavior: smooth; font-size: 16px; }
+
+    body {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      background: var(--white);
+      color: var(--text);
+      line-height: 1.75;
+    }
+
+    h1, h2, h3, h4, nav, .btn, .tag, label, .section-label, .fact-label, .fact-value {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    img { display: block; width: 100%; height: 100%; object-fit: cover; }
+    a { color: inherit; text-decoration: none; }
+
+    /* ── HEADER ── */
+    header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: rgba(27, 58, 92, 0.97);
+      backdrop-filter: blur(8px);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 2.5rem;
+      height: 64px;
+    }
+
+    .logo {
+      color: var(--white);
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 1rem;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .logo span { color: var(--sand); font-weight: 700; }
+
+    nav { display: flex; gap: 1.8rem; align-items: center; }
+
+    nav a {
+      color: rgba(255,255,255,0.75);
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+      cursor: pointer;
+    }
+
+    nav a:hover, nav a.active { color: var(--sand); }
+
+    .nav-cta {
+      background: var(--sand);
+      color: var(--navy) !important;
+      padding: 0.45rem 1.1rem;
+      border-radius: 2px;
+      font-weight: 700 !important;
+    }
+
+    .nav-cta:hover { background: #d4b07a !important; }
+
+    /* ── HERO ── */
+    .hero {
+      height: 100vh;
+      min-height: 640px;
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      padding-bottom: 5.5rem;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background: var(--navy);
+      overflow: hidden;
+    }
+
+    .hero-bg img { width: 100%; height: 100%; object-fit: cover; opacity: 0.52; }
+
+    .hero-bg .placeholder {
+      width: 100%; height: 100%;
+      background: linear-gradient(140deg, #1B3A5C 0%, #2D6A7A 55%, #1B3A5C 100%);
+    }
+
+    .hero-gradient {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(27,58,92,0.9) 0%, rgba(27,58,92,0.25) 55%, transparent 100%);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 0 2.5rem;
+      max-width: 820px;
+    }
+
+    .hero-label {
+      font-size: 0.72rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--sand);
+      margin-bottom: 1rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.1rem, 5vw, 3.6rem);
+      font-weight: 300;
+      color: var(--white);
+      line-height: 1.12;
+      margin-bottom: 0.8rem;
+    }
+
+    .hero h1 strong { font-weight: 700; }
+
+    .hero-tagline {
+      font-size: 1.15rem;
+      color: var(--sand);
+      font-style: italic;
+      margin-bottom: 1rem;
+      font-family: Georgia, serif;
+    }
+
+    .hero p {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.82);
+      max-width: 540px;
+      margin-bottom: 2.2rem;
+    }
+
+    .hero-badges { display: flex; gap: 0.8rem; flex-wrap: wrap; }
+
+    .badge {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.28);
+      color: var(--white);
+      padding: 0.38rem 0.9rem;
+      border-radius: 2px;
+      font-size: 0.8rem;
+      letter-spacing: 0.04em;
+    }
+
+    .badge strong { color: var(--sand); }
+
+    /* ── FACTS STRIP ── */
+    .facts-strip {
+      background: var(--navy);
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border-top: 3px solid var(--sand);
+    }
+
+    .fact {
+      padding: 1.4rem 2rem;
+      text-align: center;
+      border-right: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .fact:last-child { border-right: none; }
+    .fact-value { font-size: 1.75rem; font-weight: 700; color: var(--sand); }
+    .fact-label { font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.55); margin-top: 0.2rem; }
+
+    /* ── PAGE ROUTING ── */
+    .page { display: none; }
+    .page.active { display: block; }
+
+    /* ── SECTIONS ── */
+    section { padding: 5rem 2.5rem; max-width: 1100px; margin: 0 auto; }
+    section.wide { max-width: 1200px; }
+
+    .section-label {
+      font-size: 0.7rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 0.6rem;
+    }
+
+    .section-title {
+      font-size: clamp(1.8rem, 3vw, 2.5rem);
+      font-weight: 300;
+      color: var(--navy);
+      margin-bottom: 1.5rem;
+      line-height: 1.18;
+    }
+
+    .section-title strong { font-weight: 700; }
+
+    .divider { width: 48px; height: 3px; background: var(--sand); margin-bottom: 2.5rem; }
+
+    .lead {
+      font-size: 1.08rem;
+      color: #444;
+      max-width: 680px;
+      margin-bottom: 2rem;
+      line-height: 1.8;
+    }
+
+    /* ── TWO-COL ── */
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    /* ── FEATURE LIST ── */
+    .feature-list { list-style: none; margin: 1.5rem 0; }
+
+    .feature-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      padding: 0.55rem 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.93rem;
+      color: #444;
+    }
+
+    .feature-list li::before {
+      content: '✓';
+      color: var(--teal);
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 0.1rem;
+    }
+
+    /* ── IMAGE BLOCKS ── */
+    .img-block { border-radius: 2px; overflow: hidden; box-shadow: 0 10px 36px rgba(27,58,92,0.13); }
+
+    .img-block-inner {
+      background: var(--cream);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .img-block-inner img { position: absolute; inset: 0; }
+
+    .img-placeholder {
+      position: absolute; inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #ede7df, #d9d0c6);
+      color: var(--muted);
+      font-size: 0.82rem;
+      text-align: center;
+      gap: 0.4rem;
+    }
+
+    .img-placeholder .icon { font-size: 2.2rem; opacity: 0.4; }
+
+    /* ── STATS CARD ── */
+    .stats-card {
+      background: var(--cream);
+      border-left: 4px solid var(--sand);
+      padding: 1.8rem 2rem;
+      border-radius: 2px;
+    }
+
+    .stats-card h4 {
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 1.2rem;
+    }
+
+    .stats-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.48rem 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.88rem;
+    }
+
+    .stats-row:last-child { border-bottom: none; }
+    .stats-row span:last-child { font-weight: 700; color: var(--navy); }
+
+    /* ── HIGHLIGHT BOXES ── */
+    .highlight-box {
+      background: var(--cream);
+      border-radius: 4px;
+      padding: 2rem 2.2rem;
+      border-top: 3px solid var(--sand);
+    }
+
+    .highlight-box h3 {
+      color: var(--navy);
+      font-size: 1rem;
+      margin-bottom: 0.6rem;
+      font-weight: 700;
+    }
+
+    .highlight-box p { font-size: 0.9rem; color: #555; }
+
+    /* ── ICON CARDS ── */
+    .icon-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.2rem;
+      margin-top: 3rem;
+    }
+
+    .icon-card {
+      background: var(--cream);
+      border-radius: 4px;
+      padding: 1.8rem 1.5rem;
+      text-align: center;
+      transition: box-shadow 0.2s;
+    }
+
+    .icon-card:hover { box-shadow: 0 6px 24px rgba(27,58,92,0.1); }
+
+    .icon-card .ic-icon { font-size: 2rem; margin-bottom: 0.8rem; }
+
+    .icon-card h4 {
+      color: var(--navy);
+      font-size: 0.85rem;
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+    }
+
+    .icon-card p { font-size: 0.82rem; color: #666; }
+
+    /* ── GALLERY ── */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-top: 2.5rem;
+    }
+
+    .gallery-grid .span-tall { grid-row: span 2; }
+    .gallery-grid .span-wide { grid-column: span 2; }
+
+    .gallery-item {
+      border-radius: 2px;
+      overflow: hidden;
+      background: var(--cream);
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .gallery-item:hover { transform: translateY(-3px); box-shadow: 0 14px 36px rgba(27,58,92,0.18); }
+
+    .gallery-inner { position: relative; overflow: hidden; }
+    .gallery-inner img { position: absolute; inset: 0; transition: transform 0.3s; }
+    .gallery-item:hover .gallery-inner img { transform: scale(1.04); }
+
+    .h-220 { height: 220px; }
+    .h-300 { height: 300px; }
+    .h-460 { height: 460px; }
+
+    .gallery-cap {
+      padding: 0.55rem 0.8rem;
+      font-size: 0.73rem;
+      color: var(--muted);
+      letter-spacing: 0.04em;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    /* ── LOCATION ── */
+    .map-block { border-radius: 2px; overflow: hidden; box-shadow: 0 8px 28px rgba(27,58,92,0.12); }
+    .map-embed { height: 380px; background: #e0ddd8; }
+    .map-embed iframe { width: 100%; height: 100%; border: none; display: block; }
+
+    .transport-list { list-style: none; margin: 1.5rem 0; }
+
+    .transport-list li {
+      display: flex;
+      gap: 1rem;
+      padding: 0.85rem 0;
+      border-bottom: 1px solid var(--border);
+      align-items: center;
+    }
+
+    .transport-icon {
+      width: 36px; height: 36px;
+      background: var(--navy);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--white);
+      font-size: 0.9rem;
+      flex-shrink: 0;
+    }
+
+    .transport-info strong { display: block; font-size: 0.88rem; color: var(--navy); font-family: 'Helvetica Neue', Arial, sans-serif; }
+    .transport-info span { font-size: 0.8rem; color: var(--muted); }
+
+    /* ── PRICING ── */
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    .pricing-card {
+      border: 2px solid var(--border);
+      border-radius: 4px;
+      padding: 2rem 1.8rem;
+      text-align: center;
+      position: relative;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .pricing-card:hover { border-color: var(--teal); box-shadow: 0 8px 28px rgba(45,106,122,0.1); }
+
+    .pricing-card.featured { border-color: var(--navy); background: var(--navy); color: var(--white); }
+
+    .pricing-badge {
+      position: absolute;
+      top: -12px; left: 50%;
+      transform: translateX(-50%);
+      background: var(--sand);
+      color: var(--navy);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 0.22rem 0.8rem;
+      border-radius: 20px;
+    }
+
+    .pricing-label {
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 1rem;
+    }
+
+    .pricing-card.featured .pricing-label { color: var(--sand); }
+
+    .pricing-price { font-size: 2.2rem; font-weight: 700; color: var(--sand); line-height: 1; margin-bottom: 0.2rem; }
+    .pricing-unit { font-size: 0.78rem; color: var(--muted); margin-bottom: 1.5rem; }
+    .pricing-card.featured .pricing-unit { color: rgba(255,255,255,0.5); }
+
+    .pricing-features { list-style: none; text-align: left; margin-bottom: 2rem; }
+
+    .pricing-features li {
+      display: flex;
+      gap: 0.5rem;
+      padding: 0.45rem 0;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      font-size: 0.86rem;
+    }
+
+    .pricing-card.featured .pricing-features li { border-color: rgba(255,255,255,0.1); }
+
+    .pricing-features li::before { content: '✓'; color: var(--teal); font-weight: 700; flex-shrink: 0; }
+    .pricing-card.featured .pricing-features li::before { color: var(--sand); }
+
+    /* ── EQUIPMENT TABLE ── */
+    .equip-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .equip-card {
+      background: var(--cream);
+      border-radius: 4px;
+      padding: 1.5rem 1.8rem;
+    }
+
+    .equip-card h4 {
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .equip-card ul { list-style: none; }
+
+    .equip-card li {
+      font-size: 0.88rem;
+      color: #555;
+      padding: 0.3rem 0;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .equip-card li:last-child { border-bottom: none; }
+    .equip-card li::before { content: '·'; color: var(--sand); font-weight: 700; }
+
+    /* ── FAQ ── */
+    .faq-list { margin-top: 2.5rem; }
+
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .faq-q {
+      width: 100%;
+      background: none;
+      border: none;
+      text-align: left;
+      padding: 1.2rem 0;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--navy);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .faq-q .arrow {
+      font-size: 1.1rem;
+      color: var(--sand);
+      transition: transform 0.25s;
+      flex-shrink: 0;
+    }
+
+    .faq-q.open .arrow { transform: rotate(180deg); }
+
+    .faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+
+    .faq-a.open { max-height: 400px; }
+
+    .faq-a p {
+      padding-bottom: 1.2rem;
+      color: #555;
+      font-size: 0.95rem;
+      line-height: 1.8;
+    }
+
+    /* ── CONTACT ── */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    .contact-card {
+      background: var(--navy);
+      color: var(--white);
+      padding: 2.5rem;
+      border-radius: 4px;
+    }
+
+    .contact-card h3 { font-size: 1.3rem; font-weight: 300; margin-bottom: 0.3rem; }
+    .contact-card h3 strong { font-weight: 700; }
+
+    .contact-card .role {
+      font-size: 0.75rem;
+      color: var(--sand);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 1.8rem;
+    }
+
+    .contact-detail {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.8rem;
+      padding: 0.7rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      font-size: 0.88rem;
+    }
+
+    .contact-detail:last-of-type { border-bottom: none; }
+    .contact-detail .icon { color: var(--sand); flex-shrink: 0; margin-top: 0.1rem; }
+
+    .contact-portrait {
+      width: 76px; height: 76px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 3px solid var(--sand);
+      margin-bottom: 1.2rem;
+      background: rgba(255,255,255,0.1);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2rem;
+    }
+
+    .contact-note {
+      background: var(--cream);
+      border-left: 4px solid var(--sand);
+      padding: 1.2rem 1.5rem;
+      border-radius: 2px;
+      margin-top: 1.5rem;
+      font-size: 0.88rem;
+      color: #555;
+    }
+
+    .contact-note strong { color: var(--navy); display: block; margin-bottom: 0.5rem; }
+
+    /* ── FORM ── */
+    .inquiry-form { display: flex; flex-direction: column; gap: 1.1rem; }
+
+    .form-group { display: flex; flex-direction: column; gap: 0.35rem; }
+
+    .form-group label {
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--navy);
+      font-weight: 700;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      border: 1.5px solid var(--border);
+      border-radius: 2px;
+      padding: 0.72rem 1rem;
+      font-size: 0.93rem;
+      font-family: inherit;
+      color: var(--text);
+      background: var(--white);
+      transition: border-color 0.2s;
+      outline: none;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus { border-color: var(--teal); }
+
+    .form-group textarea { min-height: 120px; resize: vertical; }
+
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+
+    /* ── BUTTONS ── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--navy);
+      color: var(--white);
+      padding: 0.85rem 2rem;
+      border: none;
+      border-radius: 2px;
+      font-size: 0.82rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    .btn:hover { background: var(--teal); }
+    .btn-sand { background: var(--sand); color: var(--navy); }
+    .btn-sand:hover { background: #d4b07a; color: var(--navy); }
+    .btn-outline {
+      background: transparent;
+      border: 2px solid var(--navy);
+      color: var(--navy);
+    }
+    .btn-outline:hover { background: var(--navy); color: var(--white); }
+
+    /* ── PILLS / TAGS ── */
+    .pill {
+      display: inline-block;
+      background: var(--cream);
+      border: 1px solid var(--border);
+      color: var(--navy);
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.78rem;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    .pill-row { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 2rem; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--navy);
+      color: rgba(255,255,255,0.55);
+      padding: 3rem 2.5rem;
+      text-align: center;
+    }
+
+    .footer-logo {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 1.1rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--white);
+      margin-bottom: 0.8rem;
+    }
+
+    .footer-logo span { color: var(--sand); font-weight: 700; }
+
+    footer p { font-size: 0.8rem; line-height: 1.9; }
+
+    .footer-links {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      margin: 1.4rem 0;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.45);
+      transition: color 0.2s;
+      cursor: pointer;
+    }
+
+    .footer-links a:hover { color: var(--sand); }
+
+    .footer-div { height: 1px; background: rgba(255,255,255,0.1); margin: 1.4rem 0; }
+
+    /* ── LIGHTBOX ── */
+    .lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 500;
+      background: rgba(0,0,0,0.93);
+      align-items: center;
+      justify-content: center;
+    }
+
+    .lightbox.open { display: flex; }
+
+    .lightbox img {
+      max-width: 90vw;
+      max-height: 90vh;
+      object-fit: contain;
+      width: auto; height: auto;
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 1.5rem; right: 2rem;
+      color: var(--white);
+      font-size: 2rem;
+      cursor: pointer;
+      background: none;
+      border: none;
+      line-height: 1;
+    }
+
+    /* ── TOAST ── */
+    .toast {
+      position: fixed;
+      bottom: 2rem; right: 2rem;
+      background: var(--teal);
+      color: var(--white);
+      padding: 1rem 1.5rem;
+      border-radius: 4px;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 0.9rem;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.3s;
+      z-index: 200;
+      max-width: 320px;
+    }
+
+    .toast.show { opacity: 1; transform: translateY(0); }
+
+    /* ── NOTICE BANNER ── */
+    .notice {
+      background: #FFF8ED;
+      border: 1px solid #f0d89a;
+      border-radius: 4px;
+      padding: 0.8rem 1.2rem;
+      font-size: 0.85rem;
+      color: #7a5e20;
+      margin-bottom: 2rem;
+      display: flex;
+      gap: 0.5rem;
+      align-items: flex-start;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .two-col, .contact-grid, .equip-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .facts-strip { grid-template-columns: repeat(2, 1fr); }
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+      .gallery-grid .span-tall { grid-row: span 1; }
+      .gallery-grid .span-wide { grid-column: span 1; }
+      .h-460 { height: 220px; }
+      .h-300 { height: 220px; }
+      .pricing-grid { grid-template-columns: 1fr; max-width: 420px; margin-left: auto; margin-right: auto; }
+      .icon-cards { grid-template-columns: repeat(2, 1fr); }
+      .form-row { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 640px) {
+      header { padding: 0 1.2rem; }
+      .logo { font-size: 0.85rem; }
+      nav { gap: 0.8rem; }
+      nav a:not(.nav-cta) { display: none; }
+      .hero-content { padding: 0 1.5rem; }
+      section { padding: 3rem 1.5rem; }
+      .icon-cards { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════
+     HEADER
+══════════════════════════════════ -->
+<header>
+  <div class="logo">Elb <span>Business</span> Studio · Wedel</div>
+  <nav>
+    <a onclick="showPage('home')" class="active">Übersicht</a>
+    <a onclick="showPage('apartment')">Die Wohnung</a>
+    <a onclick="showPage('gallery')">Galerie</a>
+    <a onclick="showPage('pricing')">Konditionen</a>
+    <a onclick="showPage('location')">Lage</a>
+    <a onclick="showPage('faq')">FAQ</a>
+    <a onclick="showPage('contact')" class="nav-cta">Jetzt anfragen</a>
+  </nav>
+</header>
+
+
+<!-- ══════════════════════════════════
+     HOME
+══════════════════════════════════ -->
+<div id="page-home" class="page active">
+
+  <div class="hero">
+    <div class="hero-bg">
+      <img src="images/01-wohnzimmer.jpg" alt="Elb Business Studio Wedel"
+           onerror="this.style.display='none'">
+      <div class="placeholder"></div>
+    </div>
+    <div class="hero-gradient"></div>
+    <div class="hero-content">
+      <p class="hero-label">Wedel an der Elbe · Rudolf-Breitscheid-Straße 42 · 22880 Wedel</p>
+      <h1><strong>Elb Business Studio</strong><br>Wedel</h1>
+      <p class="hero-tagline">Ruhig wohnen. Klar arbeiten. Gut ankommen.</p>
+      <p>Vollmöbliertes 1-Zimmer-Apartment auf Zeit — für Pendler, Projektmitarbeitende und Firmenkunden im Hamburger Westen. Modern, ruhig und sofort bezugsfertig.</p>
+      <div class="hero-badges">
+        <div class="badge"><strong>40 m²</strong> · 1 Person</div>
+        <div class="badge">5. OG · Aufzug</div>
+        <div class="badge">Ab <strong>6 Monate</strong></div>
+        <div class="badge">Möbliert & arbeitsfähig</div>
+        <div class="badge"><strong>3 min</strong> zum Bahnhof</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="facts-strip">
+    <div class="fact"><div class="fact-value">40 m²</div><div class="fact-label">Wohnfläche</div></div>
+    <div class="fact"><div class="fact-value">5. OG</div><div class="fact-label">Etage von 7 · Aufzug</div></div>
+    <div class="fact"><div class="fact-value">2021</div><div class="fact-label">Kernsaniert</div></div>
+    <div class="fact"><div class="fact-value">30 min</div><div class="fact-label">Hamburg Hbf per S-Bahn</div></div>
+  </div>
+
+  <section>
+    <div class="two-col">
+      <div>
+        <p class="section-label">Das Apartment</p>
+        <h2 class="section-title">Ein Zuhause auf Zeit —<br><strong>für Menschen, die ankommen möchten.</strong></h2>
+        <div class="divider"></div>
+
+        <p style="color:#444;margin-bottom:1.2rem">Das Elb Business Studio Wedel ist ein modern möbliertes 1-Zimmer-Apartment für Menschen, die für eine bestimmte Zeit in Wedel oder im Hamburger Westen leben und arbeiten möchten.</p>
+
+        <p style="color:#444;margin-bottom:1.8rem">Kein Hotelzimmer. Kein anonymer Standard. Sondern ein durchdachtes, ruhiges Zuhause auf Zeit — mit klarer Einrichtung, angenehmer Atmosphäre und allem, was für einen produktiven, komfortablen Aufenthalt wichtig ist.</p>
+
+        <div class="pill-row">
+          <span class="pill">Pendler</span>
+          <span class="pill">Projektmitarbeitende</span>
+          <span class="pill">Relocation</span>
+          <span class="pill">Probezeit</span>
+          <span class="pill">Firmenwohnung</span>
+          <span class="pill">Privatpersonen</span>
+        </div>
+
+        <ul class="feature-list">
+          <li>Vollmöbliert &amp; sofort bezugsfertig</li>
+          <li>Moderner Arbeitsplatz (Schreibtisch, WLAN)</li>
+          <li>Moderne Einbauküche inkl. Waschmaschine</li>
+          <li>Gepflegtes Duschbad, hotelähnlich ausgestattet</li>
+          <li>Schlafnische separat abteilbar</li>
+          <li>Massivbauweise — außergewöhnlich ruhig</li>
+          <li>Aufzug vorhanden · Kellerabteil inklusive</li>
+          <li>Kernsaniert 2021, Energieklasse C</li>
+        </ul>
+
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.5rem">
+          <button class="btn" onclick="showPage('contact')">Jetzt anfragen</button>
+          <button class="btn btn-outline" onclick="showPage('apartment')">Wohnung entdecken</button>
+        </div>
+      </div>
+
+      <div>
+        <div class="img-block">
+          <div class="img-block-inner" style="height:400px">
+            <img src="images/01-wohnzimmer.jpg" alt="Wohnbereich Elb Business Studio">
+            <div class="img-placeholder">
+              <span class="icon">🛋</span>
+              <span>Wohnbereich<br><small>images/01-wohnzimmer.jpg</small></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats-card" style="margin-top:1.2rem">
+          <h4>Auf einen Blick</h4>
+          <div class="stats-row"><span>Wohnfläche</span><span>ca. 40 m²</span></div>
+          <div class="stats-row"><span>Zimmer</span><span>1 (+ Schlafnische)</span></div>
+          <div class="stats-row"><span>Etage</span><span>5. OG von 7</span></div>
+          <div class="stats-row"><span>Geeignet für</span><span>1 Person</span></div>
+          <div class="stats-row"><span>Mietdauer</span><span>ab 6 Monaten</span></div>
+          <div class="stats-row"><span>Stil</span><span>Hell-maritim · Warm-skandinavisch</span></div>
+          <div class="stats-row"><span>Haustiere / Rauchen</span><span>Nicht vorgesehen</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Icon Cards -->
+    <div class="icon-cards">
+      <div class="icon-card">
+        <div class="ic-icon">🏢</div>
+        <h4>Für Unternehmen</h4>
+        <p>Mitarbeiterwohnung, Projektwohnung oder Relocation-Lösung — professionell und unkompliziert.</p>
+      </div>
+      <div class="icon-card">
+        <div class="ic-icon">🚆</div>
+        <h4>Für Pendler</h4>
+        <p>30 Minuten nach Hamburg Hbf per S-Bahn. Ruhe am Abend, Erreichbarkeit am Tag.</p>
+      </div>
+      <div class="icon-card">
+        <div class="ic-icon">🌊</div>
+        <h4>Elbnah wohnen</h4>
+        <p>Elbstrand und Hafen Wedel in wenigen Gehminuten. Natur und Stadtleben in Balance.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<!-- ══════════════════════════════════
+     DIE WOHNUNG
+══════════════════════════════════ -->
+<div id="page-apartment" class="page">
+  <section>
+    <p class="section-label">Im Detail</p>
+    <h2 class="section-title">Das Apartment —<br><strong>durchdacht, ruhig, hochwertig</strong></h2>
+    <div class="divider"></div>
+    <p class="lead">Die Einrichtung folgt einer klaren Linie: hell-maritim, warm-skandinavisch, reduziert und funktional. Kein überladenes Ferienwohnungsgefühl, kein anonymer Standard — sondern Wärme, Klarheit und professionelle Ausstrahlung.</p>
+
+    <!-- Wohn- & Schlafbereich -->
+    <div class="two-col" style="margin-bottom:3.5rem">
+      <div>
+        <h3 style="color:var(--navy);font-size:1.15rem;font-weight:700;margin-bottom:0.8rem">Wohn- &amp; Schlafbereich</h3>
+        <p style="color:#444;margin-bottom:1rem">Der großzügige Wohn-/Schlafraum bildet das Herzstück des Apartments. Die Schlafzone ist mit einem 1,40 m breiten Bett für eine Person geplant — gemütlich, ruhig und hochwertig gestaltet, mit angenehmen Textilien und einer guten Matratze.</p>
+        <p style="color:#444;margin-bottom:1rem">Der Wohnbereich bietet eine klare Struktur mit gemütlicher Sitzmöglichkeit, TV-Zone, warmem Teppich und ruhiger, reduzierter Dekoration. Tagsüber funktional, abends wohnlich.</p>
+        <p style="color:#444">Durch die Höhe im 5. Stockwerk und die massive Bauweise ist die Wohnung außergewöhnlich ruhig — kein Straßenlärm, kein Trittschall.</p>
+      </div>
+      <div class="img-block">
+        <div class="img-block-inner" style="height:320px">
+          <img src="images/02-wohnzimmer-aktuell.jpg" alt="Wohnzimmer">
+          <div class="img-placeholder"><span class="icon">🛏</span><span>Wohnzimmer<br><small>images/02-wohnzimmer-aktuell.jpg</small></span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Arbeitsplatz -->
+    <div class="two-col" style="margin-bottom:3.5rem">
+      <div class="img-block" style="order:1">
+        <div class="img-block-inner" style="height:280px">
+          <img src="images/03-schlafnische.jpg" alt="Schlafnische / Arbeitsbereich">
+          <div class="img-placeholder"><span class="icon">💼</span><span>Schlafnische<br><small>images/03-schlafnische.jpg</small></span></div>
+        </div>
+      </div>
+      <div style="order:2">
+        <h3 style="color:var(--navy);font-size:1.15rem;font-weight:700;margin-bottom:0.8rem">Arbeitsplatz für konzentriertes Arbeiten</h3>
+        <p style="color:#444;margin-bottom:1rem">Gerade für Firmenmitarbeitende und Pendler ist ein echter Arbeitsplatz entscheidend. Das Apartment wird arbeitsfähig ausgestattet — mit einem kompakten Schreibtisch, angenehmer Beleuchtung und einer klar definierten Arbeitszone.</p>
+        <ul class="feature-list">
+          <li>Schreibtisch &amp; Arbeitsstuhl</li>
+          <li>Arbeitsleuchte</li>
+          <li>Highspeed WLAN / Internet</li>
+          <li>Kabelmanagement</li>
+          <li>Optional: externer Monitor</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Küche -->
+    <div class="two-col" style="margin-bottom:3.5rem">
+      <div>
+        <h3 style="color:var(--navy);font-size:1.15rem;font-weight:700;margin-bottom:0.8rem">Moderne Küche mit Waschmaschine</h3>
+        <p style="color:#444;margin-bottom:1rem">Die Küche ist modern, hell und funktional ausgestattet — mit Kochfeld, Spüle, Backofen und integrierter Waschmaschine. Alle Geräte sind neuwertig (2021).</p>
+        <p style="color:#444;margin-bottom:1rem">Die Küche wird vollständig für eine Person ausgestattet. Eine Spülmaschine ist nicht vorhanden — die Küche ist dafür kompakt und pflegeleicht.</p>
+        <ul class="feature-list">
+          <li>Induktionskochfeld &amp; Backofen</li>
+          <li>Integrierte Waschmaschine</li>
+          <li>Geschirr, Besteck, Gläser</li>
+          <li>Töpfe &amp; Pfanne</li>
+          <li>Kaffeemaschine &amp; Wasserkocher</li>
+          <li>Schneidebrett, Messer, Küchenzubehör</li>
+        </ul>
+      </div>
+      <div class="img-block">
+        <div class="img-block-inner" style="height:320px">
+          <img src="images/05-kueche.jpg" alt="Moderne Einbauküche">
+          <div class="img-placeholder"><span class="icon">🍳</span><span>Moderne Einbauküche<br><small>images/05-kueche.jpg</small></span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bad & Flur -->
+    <div class="two-col" style="margin-bottom:3.5rem">
+      <div class="img-block">
+        <div class="img-block-inner" style="height:300px">
+          <img src="images/06-bad.jpg" alt="Badezimmer">
+          <div class="img-placeholder"><span class="icon">🚿</span><span>Badezimmer<br><small>images/06-bad.jpg</small></span></div>
+        </div>
+      </div>
+      <div>
+        <h3 style="color:var(--navy);font-size:1.15rem;font-weight:700;margin-bottom:0.8rem">Modernes Duschbad</h3>
+        <p style="color:#444;margin-bottom:1rem">Das vollständig neu geflieste Bad verfügt über eine großzügige Dusche, WC, Waschbecken und Handtuchheizkörper. Hotelähnlich ausgestattet — gepflegt, klar, hell.</p>
+        <ul class="feature-list">
+          <li>Hochwertige Handtücher</li>
+          <li>Föhn</li>
+          <li>Badmatte &amp; Ablagekorb</li>
+          <li>Dusche (keine Badewanne)</li>
+          <li>Handtuchheizung</li>
+        </ul>
+
+        <h3 style="color:var(--navy);font-size:1.15rem;font-weight:700;margin-top:2rem;margin-bottom:0.8rem">Heller Eingangsbereich</h3>
+        <p style="color:#444;margin-bottom:1rem">Der Flur wird reduziert und funktional gestaltet — mit Garderobe, Spiegel, Schuhablage, Schlüsselablage und einem hellen Läufer. Der erste Eindruck: aufgeräumt, gepflegt, willkommen.</p>
+      </div>
+    </div>
+
+    <!-- Grundriss -->
+    <div style="margin-top:2rem">
+      <h3 style="color:var(--navy);font-size:1.15rem;font-weight:700;margin-bottom:1.5rem">Grundriss</h3>
+      <div class="two-col">
+        <div class="img-block">
+          <div class="img-block-inner" style="height:340px">
+            <img src="images/grundriss.jpg" alt="Grundriss">
+            <div class="img-placeholder"><span class="icon">📐</span><span>Grundriss<br><small>images/grundriss.jpg</small></span></div>
+          </div>
+        </div>
+        <div class="stats-card" style="margin-top:0">
+          <h4>Raumaufteilung</h4>
+          <div class="stats-row"><span>Wohn-/Schlafraum</span><span>ca. 25,5 m²</span></div>
+          <div class="stats-row"><span>Küche</span><span>4,41 m²</span></div>
+          <div class="stats-row"><span>Bad</span><span>3,21 m²</span></div>
+          <div class="stats-row"><span>Flur</span><span>6,87 m²</span></div>
+          <div class="stats-row" style="border-top:2px solid var(--sand);margin-top:0.5rem"><span><strong>Gesamt</strong></span><span><strong>40 m²</strong></span></div>
+          <div style="margin-top:1.2rem;font-size:0.8rem;color:var(--muted)">
+            Hinweis: Das Bad verfügt über eine Dusche (kein Badewanne, wie im Grundriss eingezeichnet).
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<!-- ══════════════════════════════════
+     GALERIE
+══════════════════════════════════ -->
+<div id="page-gallery" class="page">
+  <section class="wide">
+    <p class="section-label">Bildergalerie</p>
+    <h2 class="section-title">Das Studio in <strong>Bildern</strong></h2>
+    <div class="divider"></div>
+    <p style="color:#444;margin-bottom:0.5rem">Alle Fotos zeigen die reale Wohnung — teilweise mit Beispielmöblierung zur Inspiration.</p>
+
+    <div class="gallery-grid">
+
+      <div class="gallery-item span-tall" onclick="openLightbox('images/01-wohnzimmer.jpg','Beispiel Möblierung — Wohnbereich')">
+        <div class="gallery-inner h-460">
+          <img src="images/01-wohnzimmer.jpg" alt="Beispiel Möblierung">
+          <div class="img-placeholder" style="height:100%"><span class="icon">🛋</span><span>Beispiel Möblierung</span></div>
+        </div>
+        <div class="gallery-cap">Beispiel Möblierung — Wohnbereich</div>
+      </div>
+
+      <div class="gallery-item" onclick="openLightbox('images/02-wohnzimmer-aktuell.jpg','Großes Wohnzimmer (aktuell)')">
+        <div class="gallery-inner h-220">
+          <img src="images/02-wohnzimmer-aktuell.jpg" alt="Wohnzimmer">
+          <div class="img-placeholder" style="height:100%"><span class="icon">🛏</span><span>Wohnzimmer</span></div>
+        </div>
+        <div class="gallery-cap">Großes Wohnzimmer</div>
+      </div>
+
+      <div class="gallery-item" onclick="openLightbox('images/03-schlafnische.jpg','Blick zur Schlafnische')">
+        <div class="gallery-inner h-220">
+          <img src="images/03-schlafnische.jpg" alt="Schlafnische">
+          <div class="img-placeholder" style="height:100%"><span class="icon">🚪</span><span>Schlafnische</span></div>
+        </div>
+        <div class="gallery-cap">Blick zur Schlafnische</div>
+      </div>
+
+      <div class="gallery-item span-wide" onclick="openLightbox('images/04-flur.jpg','Heller Eingangsbereich')">
+        <div class="gallery-inner h-300">
+          <img src="images/04-flur.jpg" alt="Flur">
+          <div class="img-placeholder" style="height:100%"><span class="icon">🏠</span><span>Beispiel Flur</span></div>
+        </div>
+        <div class="gallery-cap">Heller Eingangsbereich</div>
+      </div>
+
+      <div class="gallery-item" onclick="openLightbox('images/05-kueche.jpg','Moderne Einbauküche')">
+        <div class="gallery-inner h-220">
+          <img src="images/05-kueche.jpg" alt="Küche">
+          <div class="img-placeholder" style="height:100%"><span class="icon">🍳</span><span>Küche</span></div>
+        </div>
+        <div class="gallery-cap">Moderne Einbauküche</div>
+      </div>
+
+      <div class="gallery-item" onclick="openLightbox('images/06-bad.jpg','Badezimmer zum Wohlfühlen')">
+        <div class="gallery-inner h-220">
+          <img src="images/06-bad.jpg" alt="Bad">
+          <div class="img-placeholder" style="height:100%"><span class="icon">🚿</span><span>Badezimmer</span></div>
+        </div>
+        <div class="gallery-cap">Badezimmer mit Dusche</div>
+      </div>
+
+      <div class="gallery-item" onclick="openLightbox('images/07-ausblick.jpg','Wunderbarer Ausblick')">
+        <div class="gallery-inner h-220">
+          <img src="images/07-ausblick.jpg" alt="Ausblick">
+          <div class="img-placeholder" style="height:100%"><span class="icon">🌳</span><span>Ausblick</span></div>
+        </div>
+        <div class="gallery-cap">Wunderbarer Ausblick vom 5. OG</div>
+      </div>
+
+      <div class="gallery-item span-wide" onclick="openLightbox('images/08-aussenansicht.jpg','Außenansicht')">
+        <div class="gallery-inner h-300">
+          <img src="images/08-aussenansicht.jpg" alt="Außenansicht">
+          <div class="img-placeholder" style="height:100%"><span class="icon">🏢</span><span>Außenansicht</span></div>
+        </div>
+        <div class="gallery-cap">Außenansicht — Rudolf-Breitscheid-Straße 42</div>
+      </div>
+
+      <div class="gallery-item" onclick="openLightbox('images/09-elbstrand.jpg','Elbstrand in der Nähe')">
+        <div class="gallery-inner h-220">
+          <img src="images/09-elbstrand.jpg" alt="Elbstrand">
+          <div class="img-placeholder" style="height:100%"><span class="icon">🏖</span><span>Elbstrand Wedel</span></div>
+        </div>
+        <div class="gallery-cap">Elbstrand — wenige Gehminuten</div>
+      </div>
+
+      <div class="gallery-item" onclick="openLightbox('images/10-hafen.jpg','Am Hafen Wedel')">
+        <div class="gallery-inner h-220">
+          <img src="images/10-hafen.jpg" alt="Hafen">
+          <div class="img-placeholder" style="height:100%"><span class="icon">⚓</span><span>Hafen Wedel</span></div>
+        </div>
+        <div class="gallery-cap">Am Hafen Wedel</div>
+      </div>
+
+    </div>
+  </section>
+</div>
+
+
+<!-- ══════════════════════════════════
+     KONDITIONEN
+══════════════════════════════════ -->
+<div id="page-pricing" class="page">
+  <section>
+    <p class="section-label">Vermietungskonzept</p>
+    <h2 class="section-title">Flexible <strong>Mietmodelle</strong></h2>
+    <div class="divider"></div>
+    <p class="lead">Das Elb Business Studio ist auf die Bedürfnisse von Berufspendlern, Projektmitarbeitenden und Firmen ausgerichtet. Wir vermieten möbliert und mit Pauschalmiete — transparent, unkompliziert, verlässlich.</p>
+
+    <div class="notice">
+      <span>ℹ</span>
+      <span>Die konkreten Mietpreise werden individuell nach Mietdauer und Nutzungsart abgestimmt. Bitte senden Sie uns eine Anfrage mit Ihren Wünschen.</span>
+    </div>
+
+    <div class="pricing-grid">
+
+      <div class="pricing-card">
+        <div class="pricing-label">Kurzzeit</div>
+        <div class="pricing-price">auf Anfrage</div>
+        <div class="pricing-unit">pro Monat · Mindestens 1–3 Monate</div>
+        <ul class="pricing-features">
+          <li>Vollmöbliert &amp; bezugsfertig</li>
+          <li>WLAN / Internet</li>
+          <li>Nebenkosten pauschal</li>
+          <li>Bettwäsche &amp; Handtücher</li>
+          <li>Flexible Kündigungsfrist</li>
+        </ul>
+        <button class="btn btn-sand" onclick="showPage('contact')">Anfragen</button>
+      </div>
+
+      <div class="pricing-card featured">
+        <div class="pricing-badge">Empfehlung</div>
+        <div class="pricing-label">Business-Miete</div>
+        <div class="pricing-price">auf Anfrage</div>
+        <div class="pricing-unit">pro Monat · Mindestens 6 Monate</div>
+        <ul class="pricing-features">
+          <li>Vollmöbliert &amp; voll ausgestattet</li>
+          <li>Nebenkosten pauschal inklusive</li>
+          <li>WLAN / Highspeed Internet</li>
+          <li>Waschmaschine inklusive</li>
+          <li>Kellerabteil &amp; Aufzug</li>
+          <li>Kündigung 1 Monat Frist</li>
+        </ul>
+        <button class="btn btn-sand" onclick="showPage('contact')">Jetzt anfragen</button>
+      </div>
+
+      <div class="pricing-card">
+        <div class="pricing-label">Langzeit</div>
+        <div class="pricing-price">auf Anfrage</div>
+        <div class="pricing-unit">pro Monat · Ab 12 Monate</div>
+        <ul class="pricing-features">
+          <li>Langzeitrabatt</li>
+          <li>Möbliert oder unmöbliert</li>
+          <li>Individuelle Vereinbarung</li>
+          <li>Stabile Konditionen</li>
+          <li>Direkter Eigentümerkontakt</li>
+        </ul>
+        <button class="btn" onclick="showPage('contact')">Anfragen</button>
+      </div>
+
+    </div>
+
+    <!-- Immer inklusive -->
+    <div style="background:var(--cream);border-radius:4px;padding:2.5rem;margin-top:3rem">
+      <h3 style="color:var(--navy);font-size:0.75rem;letter-spacing:0.2em;text-transform:uppercase;margin-bottom:1.5rem">Immer inklusive</h3>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0.8rem">
+        <div style="font-size:0.88rem;color:#444;display:flex;gap:0.5rem"><span style="color:var(--teal);font-weight:700">✓</span>Highspeed WLAN</div>
+        <div style="font-size:0.88rem;color:#444;display:flex;gap:0.5rem"><span style="color:var(--teal);font-weight:700">✓</span>Smart-TV</div>
+        <div style="font-size:0.88rem;color:#444;display:flex;gap:0.5rem"><span style="color:var(--teal);font-weight:700">✓</span>Vollständige Küchenausstattung</div>
+        <div style="font-size:0.88rem;color:#444;display:flex;gap:0.5rem"><span style="color:var(--teal);font-weight:700">✓</span>Waschmaschine</div>
+        <div style="font-size:0.88rem;color:#444;display:flex;gap:0.5rem"><span style="color:var(--teal);font-weight:700">✓</span>Bettwäsche &amp; Handtücher</div>
+        <div style="font-size:0.88rem;color:#444;display:flex;gap:0.5rem"><span style="color:var(--teal);font-weight:700">✓</span>Kellerabteil</div>
+        <div style="font-size:0.88rem;color:#444;display:flex;gap:0.5rem"><span style="color:var(--teal);font-weight:700">✓</span>Aufzug</div>
+        <div style="font-size:0.88rem;color:#444;display:flex;gap:0.5rem"><span style="color:var(--teal);font-weight:700">✓</span>Schreibtisch / Arbeitsplatz</div>
+        <div style="font-size:0.88rem;color:#444;display:flex;gap:0.5rem"><span style="color:var(--teal);font-weight:700">✓</span>Föhn, Badmatte, Ablagen</div>
+      </div>
+    </div>
+
+    <!-- Ausstattungsübersicht -->
+    <h3 style="color:var(--navy);font-size:1.1rem;font-weight:700;margin-top:4rem;margin-bottom:1.5rem">Vollständige Ausstattung im Überblick</h3>
+    <div class="equip-grid">
+      <div class="equip-card">
+        <h4>🛋 Wohnen &amp; Schlafen</h4>
+        <ul>
+          <li>1,40 m Bett für 1 Person</li>
+          <li>Matratze / Topper</li>
+          <li>Bettwäsche, Kissen &amp; Decke</li>
+          <li>Sideboard &amp; Smart-TV</li>
+          <li>Gemütliche Sitzmöglichkeit</li>
+          <li>Wohnlicher Teppich</li>
+          <li>Warme Beleuchtung</li>
+          <li>Kleiderschrank / Stauraum</li>
+        </ul>
+      </div>
+      <div class="equip-card">
+        <h4>💼 Arbeiten</h4>
+        <ul>
+          <li>Schreibtisch</li>
+          <li>Arbeitsstuhl</li>
+          <li>Arbeitsleuchte</li>
+          <li>Highspeed WLAN / Internet</li>
+          <li>Kabelmanagement</li>
+          <li>Optional: externer Monitor</li>
+        </ul>
+      </div>
+      <div class="equip-card">
+        <h4>🍳 Küche</h4>
+        <ul>
+          <li>Moderne Einbauküche (2021)</li>
+          <li>Kochfeld &amp; Backofen</li>
+          <li>Waschmaschine</li>
+          <li>Kaffeemaschine &amp; Wasserkocher</li>
+          <li>Geschirr, Besteck, Gläser</li>
+          <li>Töpfe, Pfanne, Küchenzubehör</li>
+        </ul>
+      </div>
+      <div class="equip-card">
+        <h4>🚿 Bad &amp; Flur</h4>
+        <ul>
+          <li>Dusche (neu, 2021)</li>
+          <li>Hochwertige Handtücher</li>
+          <li>Föhn</li>
+          <li>Badmatte &amp; Ablagekorb</li>
+          <li>Garderobe &amp; Spiegel</li>
+          <li>Schuhablage &amp; Schlüsselablage</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Für Firmen -->
+    <div style="background:var(--navy);color:var(--white);border-radius:4px;padding:2.5rem;margin-top:3rem">
+      <h3 style="font-size:1rem;font-weight:700;color:var(--sand);letter-spacing:0.05em;margin-bottom:1rem">Für Unternehmen: Mitarbeiterwohnung ohne Aufwand</h3>
+      <p style="font-size:0.92rem;color:rgba(255,255,255,0.8);line-height:1.8;margin-bottom:1rem">Für Firmen bietet das Apartment den Vorteil, dass Mitarbeitende nicht in einem Hotelzimmer leben müssen — sondern in einem echten, ruhigen Zuhause auf Zeit. Vollmöbliert, arbeitsfähig und bezugsfertig.</p>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0.8rem;margin-top:1rem">
+        <div style="font-size:0.85rem;color:rgba(255,255,255,0.7);display:flex;gap:0.5rem"><span style="color:var(--sand)">→</span>Mitarbeiterwohnung</div>
+        <div style="font-size:0.85rem;color:rgba(255,255,255,0.7);display:flex;gap:0.5rem"><span style="color:var(--sand)">→</span>Projektwohnung</div>
+        <div style="font-size:0.85rem;color:rgba(255,255,255,0.7);display:flex;gap:0.5rem"><span style="color:var(--sand)">→</span>Relocation-Lösung</div>
+        <div style="font-size:0.85rem;color:rgba(255,255,255,0.7);display:flex;gap:0.5rem"><span style="color:var(--sand)">→</span>Wohnen während Probezeit</div>
+        <div style="font-size:0.85rem;color:rgba(255,255,255,0.7);display:flex;gap:0.5rem"><span style="color:var(--sand)">→</span>Pendlerwohnung</div>
+        <div style="font-size:0.85rem;color:rgba(255,255,255,0.7);display:flex;gap:0.5rem"><span style="color:var(--sand)">→</span>Unterkunft Fachkräfte</div>
+      </div>
+      <button class="btn btn-sand" style="margin-top:1.5rem" onclick="showPage('contact')">Firmenanfrage stellen</button>
+    </div>
+  </section>
+</div>
+
+
+<!-- ══════════════════════════════════
+     LAGE
+══════════════════════════════════ -->
+<div id="page-location" class="page">
+  <section>
+    <p class="section-label">Standort</p>
+    <h2 class="section-title">Wedel —<br><strong>Hamburg vor der Tür. Elbe ums Eck.</strong></h2>
+    <div class="divider"></div>
+    <p class="lead">Wedel verbindet die Nähe zu Hamburg mit der Ruhe einer gewachsenen Stadt direkt an der Elbe. Ideal für Menschen, die beruflich im Hamburger Westen tätig sind und abends einen ruhigen Rückzugsort suchen.</p>
+
+    <div class="two-col">
+      <div>
+        <ul class="transport-list">
+          <li>
+            <div class="transport-icon">🚶</div>
+            <div class="transport-info"><strong>2 Minuten</strong><span>Bushaltestelle — direkte Anbindung</span></div>
+          </li>
+          <li>
+            <div class="transport-icon">🚂</div>
+            <div class="transport-info"><strong>3 Minuten Fahrzeit</strong><span>Bahnhof Wedel (S-Bahn S1)</span></div>
+          </li>
+          <li>
+            <div class="transport-icon">🏙</div>
+            <div class="transport-info"><strong>ca. 30 Minuten</strong><span>Hamburg Hauptbahnhof mit der S1</span></div>
+          </li>
+          <li>
+            <div class="transport-icon">✈</div>
+            <div class="transport-info"><strong>44 Minuten</strong><span>Flughafen Hamburg (HAM)</span></div>
+          </li>
+          <li>
+            <div class="transport-icon">🏖</div>
+            <div class="transport-info"><strong>Fußläufig</strong><span>Elbstrand Schulau — Natur direkt vor der Tür</span></div>
+          </li>
+          <li>
+            <div class="transport-icon">⚓</div>
+            <div class="transport-info"><strong>Fußläufig</strong><span>Hafen Wedel mit Blick auf die Elbe</span></div>
+          </li>
+          <li>
+            <div class="transport-icon">🛒</div>
+            <div class="transport-info"><strong>In der Nähe</strong><span>Supermärkte, Restaurants, Apotheke, Infrastruktur</span></div>
+          </li>
+        </ul>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.8rem;margin-top:1.5rem">
+          <div class="img-block">
+            <div class="img-block-inner" style="height:160px">
+              <img src="images/09-elbstrand.jpg" alt="Elbstrand">
+              <div class="img-placeholder" style="height:100%;font-size:0.75rem"><span>🏖</span><span>Elbstrand</span></div>
+            </div>
+          </div>
+          <div class="img-block">
+            <div class="img-block-inner" style="height:160px">
+              <img src="images/10-hafen.jpg" alt="Hafen Wedel">
+              <div class="img-placeholder" style="height:100%;font-size:0.75rem"><span>⚓</span><span>Hafen Wedel</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="map-block">
+          <div class="map-embed">
+            <iframe
+              src="https://maps.google.com/maps?q=Rudolf-Breitscheid-Stra%C3%9Fe+42,+22880+Wedel&output=embed"
+              allowfullscreen loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Karte Elb Business Studio">
+            </iframe>
+          </div>
+        </div>
+        <p style="font-size:0.78rem;color:var(--muted);margin-top:0.5rem;text-align:center">Rudolf-Breitscheid-Straße 42 · 22880 Wedel</p>
+
+        <div class="img-block" style="margin-top:1rem">
+          <div class="img-block-inner" style="height:220px">
+            <img src="images/08-aussenansicht.jpg" alt="Außenansicht">
+            <div class="img-placeholder" style="height:100%;font-size:0.8rem"><span>🏢</span><span>Außenansicht</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<!-- ══════════════════════════════════
+     FAQ
+══════════════════════════════════ -->
+<div id="page-faq" class="page">
+  <section style="max-width:800px">
+    <p class="section-label">Häufige Fragen</p>
+    <h2 class="section-title">FAQ — <strong>Ihre Fragen, unsere Antworten</strong></h2>
+    <div class="divider"></div>
+
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Für wie viele Personen ist die Wohnung geeignet?<span class="arrow">▾</span></button>
+        <div class="faq-a"><p>Die Wohnung ist bewusst für eine Person geplant. Das 1,40 m breite Bett, die Raumaufteilung und die Ausstattung sind ideal für Pendler, Projektmitarbeitende oder eine Einzelperson im beruflichen Aufenthalt.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Ab welcher Mietdauer ist die Wohnung verfügbar?<span class="arrow">▾</span></button>
+        <div class="faq-a"><p>Die Wohnung ist für Aufenthalte ab 6 Monaten vorgesehen. Längere Mietzeiten sind ausdrücklich willkommen. In besonderen Fällen können kürzere Zeiträume individuell besprochen werden.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Können Firmen die Wohnung anmieten?<span class="arrow">▾</span></button>
+        <div class="faq-a"><p>Ja. Die Wohnung eignet sich besonders als Mitarbeiterwohnung, Projektwohnung, Relocation-Lösung oder Pendlerwohnung. Für Firmenanmietungen stimmen wir die Konditionen individuell ab. Bitte geben Sie bei der Anfrage die gewünschte Rechnungsanschrift an.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Ist die Wohnung möbliert?<span class="arrow">▾</span></button>
+        <div class="faq-a"><p>Ja. Die Wohnung wird vollständig möbliert und mit einer alltagstauglichen Grundausstattung angeboten — inklusive Bettwäsche, Handtücher, Küchenutensilien, Schreibtisch und Arbeitsplatz. Sie müssen nur einziehen.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Gibt es Internet in der Wohnung?<span class="arrow">▾</span></button>
+        <div class="faq-a"><p>Ja. Highspeed WLAN / Internet ist als fester Bestandteil des Vermietungskonzepts vorgesehen und in der Pauschalmiete enthalten.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Sind Haustiere erlaubt?<span class="arrow">▾</span></button>
+        <div class="faq-a"><p>Nein. Die Wohnung ist auf eine ruhige, klare Nutzung als Business- und Pendlerapartment ausgelegt. Haustiere sind nicht vorgesehen.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Darf in der Wohnung geraucht werden?<span class="arrow">▾</span></button>
+        <div class="faq-a"><p>Nein. Das Apartment ist ein Nichtraucher-Apartment. Da kein Balkon vorhanden ist, ist Rauchen in der Wohnung nicht vorgesehen.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Gibt es einen Aufzug?<span class="arrow">▾</span></button>
+        <div class="faq-a"><p>Ja, das Haus verfügt über einen Aufzug. Die Wohnung liegt im 5. Obergeschoss von 7.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Gibt es eine Waschmaschine?<span class="arrow">▾</span></button>
+        <div class="faq-a"><p>Ja. In der Küche befindet sich eine integrierte Waschmaschine (neuwertig seit 2021). Eine Spülmaschine ist nicht vorhanden.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Gibt es einen Balkon?<span class="arrow">▾</span></button>
+        <div class="faq-a"><p>Nein, ein Balkon ist nicht vorhanden. Die Wohnung bietet jedoch durch die Lage im 5. OG einen schönen Ausblick über Wedels Baumkronen.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Was umfasst die Pauschalmiete?<span class="arrow">▾</span></button>
+        <div class="faq-a"><p>Die Pauschalmiete kann je nach Vertragsmodell folgende Bestandteile umfassen: möblierte Nutzung, Nebenkostenanteile, Internet, Küchenausstattung, Nutzung der Waschmaschine und Nutzung des Inventars. Die genauen Konditionen werden individuell nach Mietdauer und Nutzungsart abgestimmt.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Wie läuft die Anfrage ab?<span class="arrow">▾</span></button>
+        <div class="faq-a"><p>Senden Sie uns einfach eine Anfrage über das Kontaktformular — mit gewünschtem Mietbeginn, geplanter Mietdauer, privatem oder geschäftlichem Hintergrund und der Anzahl der Personen. Wir melden uns zeitnah mit weiteren Informationen zurück.</p></div>
+      </div>
+
+    </div>
+
+    <div style="margin-top:3rem;text-align:center">
+      <p style="color:var(--muted);margin-bottom:1rem;font-size:0.9rem">Noch weitere Fragen? Schreiben Sie uns direkt.</p>
+      <button class="btn" onclick="showPage('contact')">Zur Anfrage</button>
+    </div>
+  </section>
+</div>
+
+
+<!-- ══════════════════════════════════
+     KONTAKT / ANFRAGE
+══════════════════════════════════ -->
+<div id="page-contact" class="page">
+  <section>
+    <p class="section-label">Kontakt &amp; Anfrage</p>
+    <h2 class="section-title">Jetzt <strong>anfragen</strong></h2>
+    <div class="divider"></div>
+
+    <div class="contact-grid">
+
+      <div>
+        <div class="contact-card">
+          <div class="contact-portrait">👤</div>
+          <h3><strong>Claudia Sobotka</strong></h3>
+          <p class="role">Vermieterin</p>
+
+          <div class="contact-detail">
+            <span class="icon">📞</span>
+            <a href="tel:+4917218181502" style="color:inherit">+49 172 181 81 50</a>
+          </div>
+          <div class="contact-detail">
+            <span class="icon">✉</span>
+            <a href="mailto:mail@claudiasobotka.de" style="color:inherit">mail@claudiasobotka.de</a>
+          </div>
+          <div class="contact-detail">
+            <span class="icon">📍</span>
+            <span>Hafenstraße 43<br>22880 Wedel</span>
+          </div>
+        </div>
+
+        <div class="contact-note" style="margin-top:1.2rem">
+          <strong>Bitte geben Sie in Ihrer Anfrage an:</strong>
+          Gewünschter Mietbeginn · Geplante Mietdauer · Privat oder Firma · Anzahl Personen · Anlass des Aufenthalts · Bei Firmen: gewünschte Rechnungsanschrift
+        </div>
+      </div>
+
+      <div>
+        <form class="inquiry-form" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Vorname *</label>
+              <input type="text" placeholder="Max" required>
+            </div>
+            <div class="form-group">
+              <label>Nachname *</label>
+              <input type="text" placeholder="Mustermann" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>E-Mail *</label>
+            <input type="email" placeholder="max@beispiel.de" required>
+          </div>
+
+          <div class="form-group">
+            <label>Telefon</label>
+            <input type="tel" placeholder="+49 ...">
+          </div>
+
+          <div class="form-group">
+            <label>Anmietung für</label>
+            <select>
+              <option value="">Bitte wählen ...</option>
+              <option>Mich persönlich (privat)</option>
+              <option>Mich persönlich (beruflich)</option>
+              <option>Mein Unternehmen / Mitarbeiterin oder Mitarbeiter</option>
+              <option>Relocation / Umzug</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Gewünschter Einzug</label>
+              <input type="date">
+            </div>
+            <div class="form-group">
+              <label>Geplante Mietdauer</label>
+              <select>
+                <option value="">Bitte wählen ...</option>
+                <option>6 Monate</option>
+                <option>6–12 Monate</option>
+                <option>12 Monate</option>
+                <option>Über 12 Monate</option>
+                <option>Noch offen</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Ihre Nachricht</label>
+            <textarea placeholder="Beschreiben Sie kurz Ihren Bedarf — Anlass, Branche, Firmensitz, besondere Anforderungen, Fragen ..."></textarea>
+          </div>
+
+          <p style="font-size:0.75rem;color:var(--muted)">Mit dem Absenden stimmen Sie der Verarbeitung Ihrer Daten zur Kontaktaufnahme zu. Ihre Daten werden nicht an Dritte weitergegeben.</p>
+
+          <button type="submit" class="btn">Anfrage absenden &rarr;</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+</div>
+
+
+<!-- ══════════════════════════════════
+     FOOTER
+══════════════════════════════════ -->
+<footer>
+  <div class="footer-logo">Elb <span>Business</span> Studio · Wedel</div>
+  <p>Rudolf-Breitscheid-Straße 42 · 22880 Wedel</p>
+  <p>Kontakt: Claudia Sobotka · mail@claudiasobotka.de · +49 172 181 81 50</p>
+
+  <div class="footer-links">
+    <a onclick="showPage('home')">Übersicht</a>
+    <a onclick="showPage('apartment')">Die Wohnung</a>
+    <a onclick="showPage('gallery')">Galerie</a>
+    <a onclick="showPage('pricing')">Konditionen</a>
+    <a onclick="showPage('location')">Lage</a>
+    <a onclick="showPage('faq')">FAQ</a>
+    <a onclick="showPage('contact')">Kontakt</a>
+  </div>
+
+  <div class="footer-div"></div>
+  <p style="font-size:0.73rem">
+    Alle Angaben ohne Gewähr. &nbsp;·&nbsp;
+    Claudia Sobotka · Hafenstraße 43 · 22880 Wedel &nbsp;·&nbsp;
+    &copy; 2026 Elb Business Studio Wedel
+  </p>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+  <img id="lightbox-img" src="" alt="" onclick="event.stopPropagation()">
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<script>
+  function showPage(pageId) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.getElementById('page-' + pageId).classList.add('active');
+    document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    return false;
+  }
+
+  function toggleFaq(btn) {
+    const answer = btn.nextElementSibling;
+    const isOpen = answer.classList.contains('open');
+    document.querySelectorAll('.faq-a').forEach(a => a.classList.remove('open'));
+    document.querySelectorAll('.faq-q').forEach(q => q.classList.remove('open'));
+    if (!isOpen) {
+      answer.classList.add('open');
+      btn.classList.add('open');
+    }
+  }
+
+  function openLightbox(src, caption) {
+    document.getElementById('lightbox-img').src = src;
+    document.getElementById('lightbox').classList.add('open');
+  }
+
+  function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('open');
+  }
+
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    showToast('Vielen Dank für Ihre Anfrage! Wir melden uns zeitnah bei Ihnen.');
+    e.target.reset();
+  }
+
+  function showToast(msg) {
+    const t = document.getElementById('toast');
+    t.textContent = msg;
+    t.classList.add('show');
+    setTimeout(() => t.classList.remove('show'), 5000);
+  }
+</script>
+</body>
+</html>
