@@ -1543,21 +1543,23 @@
       </div>
 
       <div>
-        <form class="inquiry-form" data-nforms-key="nf_3c0xavjovhbth8eworwb7p3irdrgf8mo">
+        <form class="inquiry-form"
+              action="https://api.nforms.eu/f/nf_3c0xavjovhbth8eworwb7p3irdrgf8mo"
+              method="POST">
           <div class="form-row">
             <div class="form-group">
               <label for="vorname">Vorname *</label>
-              <input id="vorname" type="text" name="Vorname" placeholder="Max" data-validate="required" required>
+              <input id="vorname" type="text" name="Vorname" placeholder="Max" required>
             </div>
             <div class="form-group">
               <label for="nachname">Nachname *</label>
-              <input id="nachname" type="text" name="Nachname" placeholder="Mustermann" data-validate="required" required>
+              <input id="nachname" type="text" name="Nachname" placeholder="Mustermann" required>
             </div>
           </div>
 
           <div class="form-group">
             <label for="email">E-Mail *</label>
-            <input id="email" type="email" name="E-Mail" placeholder="max@beispiel.de" data-validate="required|email" required>
+            <input id="email" type="email" name="E-Mail" placeholder="max@beispiel.de" required>
           </div>
 
           <div class="form-group">
@@ -1567,7 +1569,7 @@
 
           <div class="form-group">
             <label for="anmietung">Anmietung für</label>
-            <select id="anmietung" name="Anmietung fuer">
+            <select id="anmietung" name="Anmietung">
               <option value="">Bitte wählen ...</option>
               <option>Mich persönlich (privat)</option>
               <option>Mich persönlich (beruflich)</option>
@@ -1579,11 +1581,11 @@
           <div class="form-row">
             <div class="form-group">
               <label for="einzug">Gewünschter Einzug</label>
-              <input id="einzug" type="date" name="Gewuenschter Einzug">
+              <input id="einzug" type="date" name="Einzug">
             </div>
             <div class="form-group">
               <label for="mietdauer">Geplante Mietdauer</label>
-              <select id="mietdauer" name="Geplante Mietdauer">
+              <select id="mietdauer" name="Mietdauer">
                 <option value="">Bitte wählen ...</option>
                 <option>6 Monate</option>
                 <option>6–12 Monate</option>
