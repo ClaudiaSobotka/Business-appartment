@@ -243,6 +243,7 @@
       background: var(--white);
       color: var(--text);
       line-height: 1.75;
+      overflow-x: hidden;
     }
 
     h1, h2, h3, h4, nav, .btn, .tag, label, .section-label, .fact-label, .fact-value {
@@ -797,6 +798,9 @@
       color: var(--white);
       padding: 2.5rem;
       border-radius: 4px;
+      box-sizing: border-box;
+      max-width: 100%;
+      overflow: hidden;
     }
 
     .contact-card h3 { font-size: 1.3rem; font-weight: 300; margin-bottom: 0.3rem; }
@@ -843,6 +847,8 @@
       color: #555;
       overflow-wrap: break-word;
       word-break: break-word;
+      box-sizing: border-box;
+      max-width: 100%;
     }
 
     .contact-note strong { color: var(--navy); display: block; margin-bottom: 0.5rem; }
@@ -863,6 +869,8 @@
     .form-group input,
     .form-group textarea,
     .form-group select {
+      width: 100%;
+      box-sizing: border-box;
       border: 1.5px solid var(--border);
       border-radius: 2px;
       padding: 0.72rem 1rem;
